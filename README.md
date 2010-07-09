@@ -1,4 +1,4 @@
-This is bots write by [Sikuli][http://sikuli.org]
+This is bots write by Sikuli (http://sikuli.org)
 
 Facebook accept gift
 ====================
