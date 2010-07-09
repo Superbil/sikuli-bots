@@ -13,7 +13,7 @@ do_list.append (["1278635179596.png","1278635208662.png"])
 do_list.append (["1278637268476.png","1278637289122.png"])
 do_list.append (["1278637396726.png","1278637412358.png"])
 do_list.append (["1278637877266.png","1278637901192.png"])
-
+do_list.append (["1278706850127.png","1278706880034.png"])
 
 # Main
 click("1278635612647.png")
