@@ -1,0 +1,103 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }  
+         
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>facebook accept gift.sikuli</h2> <a href="facebook accept gift.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+setAutoWaitTimeout(<span class="dig">0.5</span>)
+
+<span class="kw">def</span> doclick(check_pic,exit_pic):
+        <span class="kw">if</span> exists(check_pic):
+                <span class="skw">click</span>(exit_pic)
+                <span class="kw">return</span> True
+        <span class="kw">else</span>:
+                <span class="kw">return</span> False
+
+do_list = []
+do_list.append ([<img src="1278608259549.png" />,<img src="1278608339373.png" />])
+do_list.append ([<img src="1278635179596.png" />,<img src="1278635208662.png" />])
+do_list.append ([<img src="1278637268476.png" />,<img src="1278637289122.png" />])
+do_list.append ([<img src="1278637396726.png" />,<img src="1278637412358.png" />])
+do_list.append ([<img src="1278637877266.png" />,<img src="1278637901192.png" />])
+
+
+<span class="cmt"># Main
+</span><span class="skw">click</span>(<img src="1278635612647.png" />)
+<span class="skw">wait</span>(<img src="1278608682415.png" />,<span class="dig">5</span>)
+<span class="kw">while</span> exists(<img src="1278608126706.png" />):
+        <span class="skw">click</span>(<img src="1278608126706.png" />)
+        waitVanish(<img src="1278608682415.png" />)
+        <span class="kw">for</span> d <span class="kw">in</span> do_list:
+                <span class="kw">if</span> doclick(d[<span class="dig">0</span>],d[<span class="dig">1</span>]):
+                        <span class="kw">break</span>
+        <span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="skw">popup</span>(<span class="str">"All Accept is click!"</span>)
+</pre>
+</body>
+</html>
