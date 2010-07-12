@@ -18,7 +18,7 @@ do_list.append (["1278706850127.png","1278706880034.png"])
 # Main
 click("1278635612647.png")
 wait("1278608682415.png",5)
-while exists("1278608126706.png"):
+while exists("1278608126706.png",10):
 	click("1278608126706.png")
 	waitVanish("1278608682415.png")
 	for d in do_list:
